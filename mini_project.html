@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <style>
+        .main{
+            height: 300px;
+            width: 550px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5px auto;
+            padding: 10px 20px;
+            margin-top: 30px;
+            border: 1px solid rgb(0, 0, 0);
+            background-image: url(./bgc1.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            box-shadow: 0px 2px 10px black;
+            
+        }
+        .userid{
+           font-weight: 500;
+            margin-bottom:8px ;
+        }
+        .pass{
+             font-weight: 500;
+            margin-bottom:8px ;
+        }
+        .Email{
+            font-weight: 500;
+            margin-bottom:8px ;
+        }
+        .Dob{
+            font-weight: 500;
+            margin-bottom:8px ;
+        }
+        .Number{
+            font-weight: 500;
+            margin-bottom:8px ;
+        }
+        .locality{
+            font-weight: 500;
+            margin-bottom: 8px;
+            
+            display: flex;
+        }
+        .country{
+            margin-right: 10px;
+        }
+        .state{
+              margin-right: 10px;
+        }
+        
+        button{
+            color: aliceblue;
+            background-color: blue;
+            border-radius: 10px;
+            margin: 20px 45%;
+            text-align: center;
+            height: 25px;
+            width: 70px;
+        }
+        .main h3{
+            height: 30px;
+            width: 100%;
+            /* border: 1px solid black; */
+            text-align: center;
+            font-weight:bolder;
+            background-color: rgb(255, 255, 255);
+            color: rgb(162, 211, 211);
+            border-radius: 50px;
+        }
+        input{
+            border: 1px solid rgb(48, 57, 66);
+            border-radius: 10px;
+            height: 20px;
+        }
+        .main input:hover{
+            box-shadow:2px 2px 5px black ;
+            transition: 0.2s ease-in-out;
+        }
+        .locality select:hover{
+            box-shadow:2px 2px 5px black ;
+            
+        }
+        .locality option:hover{
+            transition: 1s ease-in-out;
+        }
+        button:hover{
+            box-shadow:2px 2px 5px black;
+            transition: 0.3s ease-in-out;
+        }
+        .main:hover{
+             box-shadow: 3px 4px 15px black;
+             transition: 0.5s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>login Info</h3>
+        <div class="userid">
+            <label for="user">First Name :</label>
+            
+            <input type="text" id="user" placeholder="e.g. vikash">
+           &nbsp;
+           
+
+            <label for="user">Last Name :</label>
+            
+            <input type="text" id="user" placeholder="e.g. kumar">
+        </div>
+        
+        
+        <div class="pass">
+            <label for="password">Password :</label>
+            <input type="password" id="password">
+        </div>
+         
+
+        <div class="Email">
+            <label for="email">Email :</label>
+            <input type="email"  id="email" placeholder="e.g. abcd@gmail.com ">
+        </div>
+
+        <div class="Dob">
+            <label for="dob">Date of Birth :</label>
+            <input type="datetime-local"  id="dob">
+        </div>
+            
+        <div class="Number">
+            <label for="number">Mobile no. :</label>
+            <input type="text"  id="number">
+        </div>
+        
+        <div class="locality">
+            <div class="country">
+            <label for="country">Region :</label>
+            <select id="country">
+                <option value="country">Select Country</option>
+                <option value="country">India</option>
+                <option value="country">Nepal</option>
+                <option value="country">Australia</option>
+                <option value="country">Japan</option>
+            </select>
+            </div>
+            
+            <div class="state">
+                <label for="state">State :</label>
+                <select id="state">
+                    <option value="state">Select State</option>
+                  <option value="state">Bihar</option>
+                  <option value="state">Delhi</option>
+                   <option value="state">Uttar Pradesh</option>
+                    <option value="state">Jammu & Kashmir</option>
+                     <option value="state">Banglore</option>
+                      <option value="state">Goa</option>
+                </select>
+            </div>
+            <div class="city">
+                <label for="city">City :</label>
+                <select id="city">
+                <option value="city">Select City</option>
+                    <option value="city">Patna</option>
+                   <option value="city">Madhepura</option>
+                 <option value="city">Bhagalpur</option>
+                 <option value="city">Buxar</option>
+                </select>
+            </div>
+        </div>
+       
+            <button type="submit">submit</button>
+
+        
+        
+    </div>
+    
+</body>
+</html>
